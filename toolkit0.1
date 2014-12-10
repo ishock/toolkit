@@ -1,0 +1,36 @@
+# Toolkit Darkness Team
+# C0d3rs : S0nybust3r
+from os import system
+system("cls")
+print """
+    | Toolkit Darkness Team 0.1 |
+    Escolha a Tool que deseja usar: 
+
+ 1- Hash Tools    #
+ 2- Scanner Tools #
+
+"""
+tool = raw_input("\n>>> ")
+if (tool == "1"):
+	print """
+ 	########################
+ 	########################
+ 	#####| Hash Tools |#####
+ 	########################
+ 	########################
+
+
+ 	1-Crypter MD5
+
+ 	"""
+crypt = raw_input("\n>>> ")
+if (crypt == "1"):
+    print """
+
+     --> MD5 Crypter 0.1 <--
+     By: S0nybust3r
+
+    """
+import hashlib
+h = hashlib.md5("digite aqui a palavra que deseja encryptar")
+print h.hexdigest()
